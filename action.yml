@@ -1,18 +1,22 @@
-name: "{GitHub action name}"
-description: "{GitHub action description}"
+name: "Invoke-PSDepend"
+description: "Install dependencies by Invoke-PSDepend."
 author: "Sergey.S.Betke@yandex.ru"
 branding:
   icon: "download"
   color: blue
 inputs:
-  param-id: # param id
-    description: "param description"
-    required: true
-    default: "World"
-outputs:
-  random-number: # output value id
-    description: "Random number"
-    value: ${{ steps.main.outputs.output-param-id }}
+  version:
+    description: "PSDepend required version"
+    required: false
+    default: "latest"
+  recurse:
+    description: "parse .depend.psd1 recursive"
+    required: false
+    default: "true"
+  verbose:
+    description: "verbose PSDepend output"
+    required: false
+    default: "true"
 runs:
   using: "composite"
   steps:

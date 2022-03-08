@@ -34,6 +34,6 @@ and this project adheres to
 
 - in case of vulnerabilities
 
-[Unreleased]: https://github.com/{repository-owner}/{repository-name}/compare/v1.0.0...HEAD
-[1.0.1]: https://github.com/{repository-owner}/{repository-name}/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/{repository-owner}/{repository-name}/releases/tag/v1.0.0
+[Unreleased]: https://github.com/IT-Service/Invoke-PSDepend/compare/v1.0.0...HEAD
+[1.0.1]: https://github.com/IT-Service/Invoke-PSDepend/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/IT-Service/Invoke-PSDepend/releases/tag/v1.0.0
