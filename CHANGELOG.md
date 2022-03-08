@@ -1,19 +1,31 @@
-# Журнал изменений
+# Changelog
 
-Формат этого файла базируется на рекомендациях
-[Keep a Changelog](https://keepachangelog.com/ru/1.0.0/).
+All notable changes to this project will be documented in this file.
 
-Этот проект придерживается
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to
 [![Semantic Versioning](https://img.shields.io/static/v1?label=Semantic%20Versioning&message=v2.0.0&color=green&logo=semver)](https://semver.org/lang/ru/spec/v2.0.0.html).
 
-## [Unreleased] Неопубликованные изменения (не вошедшие в релиз)
+## [Unreleased]
 
 ## [1.0.0]
 
-### Добавлено
+### Added
 
-- описание функционала первой версии
+- feature
 
-[Unreleased]: https://github.com/csm-ivanovo-ru/{repository-name}/compare/1.0.0...HEAD
-[1.0.1]: https://github.com/csm-ivanovo-ru/{repository-name}/compare/1.0.0...1.0.1
-[1.0.0]: https://github.com/csm-ivanovo-ru/{repository-name}/releases/tag/1.0.0
+### Changed
+
+- behavior
+
+### Removed
+
+- ability
+
+### Fixed
+
+- bug
+
+[Unreleased]: https://github.com/{repository-owner}/{repository-name}/compare/v1.0.0...HEAD
+[1.0.1]: https://github.com/{repository-owner}/{repository-name}/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/{repository-owner}/{repository-name}/releases/tag/v1.0.0
