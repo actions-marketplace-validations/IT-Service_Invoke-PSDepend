@@ -1,7 +1,9 @@
 *.xml  -text  merge=text diff=text eol=crlf
 *.xsd  -text  merge=text diff=text eol=crlf
 
-*.bsl  -text  merge=text diff=text eol=crlf
+*.ps1  text  merge=text diff=text eol=crlf
+*.psd1 text  merge=text diff=text eol=crlf
+*.psm1 text  merge=text diff=text eol=crlf
 
 *.md   text  merge=text diff=text eol=crlf
 
