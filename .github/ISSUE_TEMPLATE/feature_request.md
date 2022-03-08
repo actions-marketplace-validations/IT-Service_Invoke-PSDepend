@@ -1,20 +1,15 @@
 ---
-name: Запрос возможности
-about: Предложите улучшения
+name: feature request
 title: ''
-labels: Feature
+labels: feature
 assignees: ''
 
 ---
 
-## Требуемая возможность
+## Requested feature
 
-Сообщите, как это должно работать (вместо этого текста).
+Describe expected feature.
 
-## Текущее поведение
+## Suggested solution
 
-Разъясните отличия от текущего поведения (вместо этого текста).
-
-## Возможное решение
-
-Не обязательно.
+Describe suggested solution. Not expected.

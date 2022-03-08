@@ -1,26 +1,23 @@
 ---
-name: Сообщение об ошибке
-about: Сообщите об ошибке, чтобы оказать содействие в улучшении проекта. Убедитесь,
-  что Вы можете воспроизвести его на последней версии
+name: bug report
 title: ''
 labels: bug
 assignees: ''
 
 ---
 
-## Требуемое поведение
+## Expected behavior
 
-Сообщите, что должно происходить (вместо этого текста).
+Please, describe expected behavior.
 
-## Текущее поведение
+## Current behavior
 
-Сообщите, что происходит вместо ожидаемого поведения (вместо этого текста).
+Please, describe current behavior.
 
-## Возможное решение
+## Suggested solution
 
-Не обязательно.
+Describe suggested solution. Not expected.
 
-## Шаги для воспроизведения (для ошибок)
+## Bug reproducing
 
-Укажите ссылку на пример с ошибкой или приведите шаги для воспроизведения ошибки
-(вместо этого текста).
+Describe steps for this bug reproducing.

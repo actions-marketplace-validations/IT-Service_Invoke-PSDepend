@@ -1,20 +1,15 @@
 ---
-name: Улучшение функционала
-about: Предложение улучшения существующего функционала
+name: feature improvement
 title: ''
 labels: Improvement
 assignees: ''
 
 ---
 
-## Требуемая возможность
+## Feature improvement
 
-Сообщите, как это должно работать (вместо этого текста).
+Describe expected improvement.
 
-## Текущее поведение
+## Suggested solution
 
-Разъясните отличия от текущего поведения (вместо этого текста).
-
-## Возможное решение
-
-Не обязательно.
+Describe suggested solution. Not expected.
