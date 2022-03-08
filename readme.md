@@ -1,4 +1,4 @@
-# GitHub Action "{Наименование проекта}"
+# GitHub Action "{repository-name}"
 
 [![GitHub release](https://img.shields.io/github/v/release/{repository-owner}/{repository-name}.svg?sort=semver&logo=github)](https://github.com/{repository-owner}/{repository-name}/releases)
 

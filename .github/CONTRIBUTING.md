@@ -87,3 +87,12 @@ to help you resolve merge conflicts and other issues.
 Congratulations :tada::tada:
 
 Once your PR is merged, your contributions will be publicly visible.
+
+## Useful links
+
+- https://docs.github.com/en/actions/creating-actions
+- https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+- https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions
+- https://github.com/Amadevus/pwsh-script/tree/master/docs/GitHubActionsCore
+- https://4bes.nl/2021/01/31/create-a-composite-github-action-for-powershell/
+- https://github.com/PowerShell/GitHub-Actions/tree/master/PesterActionV1
