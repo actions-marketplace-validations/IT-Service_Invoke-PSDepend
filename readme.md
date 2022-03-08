@@ -31,4 +31,4 @@ The scripts and documentation in this project are released under the [MIT Licens
 
 Contributions are welcome! See [Contributor's Guide](.github/CONTRIBUTING.md).
 
-PSDepend: https://github.com/RamblingCookieMonster/PSDepend
+[PSDepend]: https://github.com/RamblingCookieMonster/PSDepend

@@ -21,7 +21,7 @@ runs:
   using: "composite"
   steps:
     - id: main
-      uses: Amadevus/pwsh-script@2.0.1
+      uses: Amadevus/pwsh-script@v2.0.1
       with:
         script: |
           . "${{ github.action_path }}/Invoke-GitHubAction.ps1";

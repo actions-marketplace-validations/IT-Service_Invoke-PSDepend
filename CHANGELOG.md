@@ -12,27 +12,7 @@ and this project adheres to
 
 ### Added
 
-- feature
-
-### Changed
-
-- behavior
-
-### Deprecated
-
-- soon-to-be removed features
-
-### Removed
-
-- now removed features
-
-### Fixed
-
-- bug fixes
-
-### Security
-
-- in case of vulnerabilities
+- install and invoke PSDepend for installing dependencies
 
 [Unreleased]: https://github.com/IT-Service/Invoke-PSDepend/compare/v1.0.0...HEAD
 [1.0.1]: https://github.com/IT-Service/Invoke-PSDepend/compare/v1.0.0...v1.0.1

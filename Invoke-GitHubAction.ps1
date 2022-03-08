@@ -18,7 +18,7 @@ try
 
 	$installModuleParams = @{ Name = $ModuleName; Force = $true };
 	$VersionParam = ( Get-ActionInput 'version' );
-	if ( $VersionParam -ne 'latest' )
+	if ( $VersionParam -and ( $VersionParam -ne 'latest' ) )
 	{
 		$Version = $VersionParam;
 	};
@@ -47,9 +47,10 @@ try
 	}
 	else
 	{
-		Write-ActionInfo ( 'installing {0} module version {1}...' -f $ModuleName, $Version );
+		Write-ActionInfo ( 'installing {0} module...' -f $ModuleName );
 		$ProgressPreference = 'SilentlyContinue';
-		Install-Module @installModuleParams;
+		$requiredModule = Install-Module @installModuleParams -PassThru;
+		Write-ActionInfo ('{0} module version {1} installed.' -f $requiredModule.Name, $requiredModule.Version);
 	};
 
 	Import-Module @installModuleParams;
@@ -59,7 +60,12 @@ finally
 	Exit-ActionOutputGroup;
 };
 
+$recursiveParam = ( Get-ActionInput -Name 'recurse' );
+$recursive = -not ( $recursiveParam -and ( $recursiveParam -ne 'true' ) );
+$verboseParam = ( Get-ActionInput -Name 'verbose' );
+$verbose = -not ( $verboseParam -and ( $verboseParam -ne 'true' ) );
+
 Invoke-PSDepend `
-	-Recurse:( ( Get-ActionInput 'recurse' ) -eq 'true' ) `
+	-Recurse:$recursive `
 	-Confirm:$false `
-	-Verbose:( ( Get-ActionInput 'verbose' ) -eq 'true' );
+	-Verbose:$verbose;
