@@ -1,29 +1,30 @@
-# {Наименование проекта}
+# GitHub Action "{Наименование проекта}"
 
-[![GitHub release](https://img.shields.io/github/v/release/csm-ivanovo-ru/{repository-name}.svg?sort=semver&logo=github)](https://github.com/csm-ivanovo-ru/{repository-name}/releases)
+[![GitHub release](https://img.shields.io/github/v/release/{repository-owner}/{repository-name}.svg?sort=semver&logo=github)](https://github.com/{repository-owner}/{repository-name}/releases)
 
 [![Semantic Versioning](https://img.shields.io/static/v1?label=Semantic%20Versioning&message=v2.0.0&color=green&logo=semver)](https://semver.org/lang/ru/spec/v2.0.0.html)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-v1.0.0-yellow.svg?logo=git)](https://conventionalcommits.org)
 
-Данный репозиторий содержит ...
+This action ...
 
-## О подготовке рабочего места разработчика
+## Usage
 
-Для работы с репозиторием потребуются:
+See [action.yml](action.yml)
 
-- [chocolatey][] (менеджер пакетов)
-- [git][]
-- [VSCode][]
+Basic:
 
-## Внесение изменений в расширения
+```yaml
+steps:
+- uses: actions/checkout@v3
+- uses: actions/{repository-name}@v1
+  with:
+    param: 'param value' # comment for param
+```
 
-Репозиторий проекта размещён по адресу
-[github.com/csm-ivanovo-ru/{repository-name}](https://github.com/csm-ivanovo-ru/{repository-name}).
-Стратегия ветвления - Git Flow.
+## License
 
-При необходимости внесения изменений в сам проект предложите Pull Request в основной
-репозиторий в ветку `develop`.
+The scripts and documentation in this project are released under the [MIT License](LICENSE).
 
-[chocolatey]: https://chocolatey.org
-[Git]: https://github.com/git-guides/install-git#install-git-on-windows "Install Git on Windows"
-[VSCode]: https://code.visualstudio.com "Visual Studio Code"
+## Contributions
+
+Contributions are welcome! See [Contributor's Guide](.github/CONTRIBUTING.md).
