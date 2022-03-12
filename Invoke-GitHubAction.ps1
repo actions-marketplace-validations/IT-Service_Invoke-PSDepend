@@ -14,11 +14,10 @@ try
 		Exit-ActionOutputGroup;
 	};
 
-	Enter-ActionOutputGroup -Name 'Install PSDepend';
+	$ModuleName = 'PSDepend';
+	Enter-ActionOutputGroup -Name "Install $ModuleName";
 	try
 	{
-		$ModuleName = 'PSDepend';
-
 		$installModuleParams = @{ Name = $ModuleName; Force = $true };
 		$VersionParam = ( Get-ActionInput 'version' );
 		if ( $VersionParam -and ( $VersionParam -ne 'latest' ) )
@@ -63,15 +62,21 @@ try
 		Exit-ActionOutputGroup;
 	};
 
-	$recursiveParam = ( Get-ActionInput -Name 'recurse' );
-	$recursive = -not ( $recursiveParam -and ( $recursiveParam -ne 'true' ) );
-	$verboseParam = ( Get-ActionInput -Name 'verbose' );
-	$verbose = -not ( $verboseParam -and ( $verboseParam -ne 'true' ) );
+	$params = @{ };
 
-	Invoke-PSDepend `
-		-Recurse:$recursive `
-		-Confirm:$false `
-		-Verbose:$verbose;
+	$recurseParam = ( Get-ActionInput -Name 'recurse' );
+	if ( -not ( $recurseParam -and ( $recurseParam -ne 'true' ) ) )
+	{
+		$params.Add( '-Recurse', $true );
+	};
+
+	$verboseParam = ( Get-ActionInput -Name 'verbose' );
+	if ( -not ( $verboseParam -and ( $verboseParam -ne 'true' ) ) )
+	{
+		$params.Add( 'Verbose', $true );
+	};
+
+	Invoke-PSDepend @$params -Confirm:$false;
 }
 catch
 {
