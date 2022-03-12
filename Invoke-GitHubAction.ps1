@@ -76,7 +76,7 @@ try
 		$params.Add( 'Verbose', $true );
 	};
 
-	Invoke-PSDepend @$params -Confirm:$false;
+	Invoke-PSDepend @params -Confirm:$false;
 }
 catch
 {
